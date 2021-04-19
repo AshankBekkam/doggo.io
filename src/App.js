@@ -29,12 +29,10 @@ class App extends Component {
     );
     const filteredDogs = allDogs.slice(0,20)
     return (
-      <Router>
         <Switch>
           <Route path = "/" exact component = {()=><Homepage dogs = {filteredDogs}/>} />
           <Route path = '/infopage' exact component = {InfoPage}/>
         </Switch>
-      </Router>
     );
   }
 }
